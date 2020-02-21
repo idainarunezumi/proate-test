@@ -29,3 +29,19 @@ header {
 }
 
 /* top ================================ */
+.top-main {
+  padding: 200px 0px 100px;
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  height:auto;
+  background-size: cover;
+  background-image: url("/girl-music.jpg");
+}
+.top-main h2 {
+  font-size: 70px;
+  padding-bottom: 40px;
+}
+.top-main p {
+  font-size: 25px;
+}
