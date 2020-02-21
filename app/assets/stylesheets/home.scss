@@ -7,6 +7,9 @@ ul,li {
   list-style-type: none;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 /* ヘッダー ================================ */
 header {
   height: 65px;
@@ -44,4 +47,12 @@ header {
 }
 .top-main p {
   font-size: 25px;
+}
+.btn-signup {
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  background-color: #77EEFF;
+  opacity: 0.8;
+  border-radius: 10px;
 }
