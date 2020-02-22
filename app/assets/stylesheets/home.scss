@@ -72,6 +72,7 @@ header {
 .upper-row {
   width: 100%;
   height: 200px;
+  border: 2px solid black;
 }
 .heading h2 {
   padding-top: 30px;
@@ -88,4 +89,12 @@ header {
   height: 120px;
   width: 60px;
   margin-left: 30px;
+}
+.lower-massage {
+  float:right;
+}
+.message-logo2 {
+  float:right;
+  height: 120px;
+  width: 60px;
 }
