@@ -1,7 +1,11 @@
 <div class="posts-index">
   <div class="container">
+    <div class="posts-wrapper">
     <% @posts.each do |post| %>
-     <%= post.content %>
+      <div class="posts-index-item">
+        <%= post.content %>
+      </div>
     <% end %>
+    </div>
   </div>
 </div>
