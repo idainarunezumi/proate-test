@@ -12,8 +12,10 @@ a {
 }
 /* ヘッダー ================================ */
 header {
+  background-color: #FFDBC9;
   height: 75px;
   width: 100%;
+
 }
 .header-logo {
   float:left;
@@ -34,7 +36,6 @@ header {
 /* top ================================ */
 .top-main {
   padding: 200px 0px 100px;
-  border: 2px solid black;
   text-align: center;
   width: 100%;
   height:auto;
@@ -58,4 +59,18 @@ header {
   background-color: #77EEFF;
   opacity: 0.8;
   border-radius: 10px;
+}
+
+/* about ================================ */
+.messages {
+  border:2px solid black;
+}
+.message {
+  border:2px solid black;
+  float:left;
+  width: 50%;
+}
+.message-logo1 {
+  height: 100px;
+  width: 50px;
 }
