@@ -10,7 +10,7 @@ ul,li {
 a {
   text-decoration: none;
   color:black;
-  display:block;
+  display:block;    /* ここで定義すると後々大変かもしれない*/
 }
 /* 共通レイアウト ================================ */
 .container {
@@ -22,7 +22,7 @@ a {
 /* ヘッダー ================================ */
 header {
   background-color: #FFDBC9;
-  height: 75px;
+  height: 65px;
   width: 100%;
 
 }
