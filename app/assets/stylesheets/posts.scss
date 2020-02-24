@@ -30,3 +30,17 @@
   color: #8899a6;
   margin-bottom: 10px;
 }
+
+/* posts/new ================================ */
+.form-body {
+  padding-top: 150px;
+  text-align: center;
+}
+.posts-new textarea {
+  min-height: 200px;
+  font-size: 20px;
+  padding: 10px;
+  resize: none;
+  width: 70%;
+  border: 1px solid #d8dadf;
+}

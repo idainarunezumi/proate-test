@@ -12,6 +12,11 @@ a {
   color:black;
   display:block;    /* ここで定義すると後々大変かもしれない*/
 }
+input {
+  background-color: transparent;
+  outline-width: 0;
+  cursor: pointer;
+}
 /* 共通レイアウト ================================ */
 .container {
 }
