@@ -2,8 +2,10 @@
   <div class="container">
     <div class="form">
       <div class="form-body">
+        <%= form_tag("/posts/create") do %>
         <textarea></textarea>
         <input type="submit" value="投稿">
+        <% end %>
 
       </div>
 
