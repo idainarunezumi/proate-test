@@ -22,6 +22,8 @@ class PostsController < ApplicationController
     redirect_to("/posts/index")
   end
   def destroy
+    @post = Post.find_by(id: params[:id])
+    @post.destroy
     redirect_to("/posts/index")
   end
 end
