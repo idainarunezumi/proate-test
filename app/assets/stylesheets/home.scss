@@ -17,6 +17,14 @@ input {
   outline-width: 0;
   cursor: pointer;
 }
+textarea {
+ min-height: 200px;
+ font-size: 20px;
+ padding: 10px;
+ resize: none;
+ width: 70%;
+ border: 1px solid #d8dadf;
+}
 /* 共通レイアウト ================================ */
 .container {
 }
