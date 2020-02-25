@@ -1,6 +1,7 @@
 <div class="posts-index">
   <div class="container">
     <div class="posts-wrapper">
+      
     <% @posts.each do |post| %>
       <div class="posts-index-item">
         <%= link_to(post.content,"/posts/#{post.id}") %>
