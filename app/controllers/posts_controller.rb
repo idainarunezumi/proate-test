@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     if @post.save
     redirect_to("/posts/index")
   else
-    render("/posts/#{@post.id}/edit")
+    render("/posts/edit")
   end
   end
   def destroy
