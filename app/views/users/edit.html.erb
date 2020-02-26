@@ -10,9 +10,9 @@
       <div class="users-form-body">
         <%= form_tag("/users/#{@user.id}/update") do %>
         <p>ユーザー名</p>
-         <input name = "name" class="btn-infomation">
+         <input name = "name" class="btn-infomation" value="<%= @user.name %>">
         <p>メールアドレス</p>
-         <input name = "email" class="btn-infomation">
+         <input name = "email" class="btn-infomation" value="<%= @user.email %>">
          <p></p>
          <input class="new-btn-signup" type="submit" value="新規登録">
          <% end %>
