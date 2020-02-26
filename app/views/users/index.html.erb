@@ -1,12 +1,13 @@
 <div class="user-index">
   <div class="container">
     <h1 class="users-heading">ユーザー一覧</h1>
-    <% @users.each do |user| %>
-    <div class="user-index-items">
-      <%= user.name %>    
+    <div class="users-wrapper">
+     <% @users.each do |user| %>
+    <div class="user-index-item">
+      <%= user.name %>
     </div>
     <% end %>
-
+   </div>
   </div>
 
 </div>
