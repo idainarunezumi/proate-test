@@ -4,7 +4,7 @@
     <div class="users-wrapper">
      <% @users.each do |user| %>
     <div class="user-index-item">
-      <%=link_to(user.name,"/users/#{user.id}")%>
+      <%=link_to(user.name,"/users/#{user.id}") %>
     </div>
     <% end %>
    </div>
