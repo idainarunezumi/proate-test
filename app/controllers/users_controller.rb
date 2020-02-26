@@ -6,5 +6,15 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
   end
   def new
+    @user = User.new(name: params[:name],email: params[:email])
+  end
+  def create
+    @user = User.new(name: params[:name],email: params[:email])
+    if @user.save
+      flash[:notice] = "新規登録が完了しました"
+      redirect_to("/users/index")
+    else
+      render("/users/new")
+    end
   end
 end
