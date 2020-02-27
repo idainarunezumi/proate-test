@@ -1,7 +1,7 @@
 /* users/index ================================ */
 .users-wrapper {
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 250px;
+  margin-left: 250px;
 }
 .users-heading {
 text-align: center;
@@ -13,12 +13,23 @@ color: #CCCCCC;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
+  display: table;
+  width: 100%;
+}
+.user-left {
+  float:left;
 }
 .user-left-img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 40%;
   box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+}
+.user-right {
+  float: left;
+  font-size: 28px;
+  margin-left: 20px;
 }
 /* users/new ================================ */
 .form-heading {
