@@ -42,4 +42,6 @@ class UsersController < ApplicationController
   end
   def login_form
   end
+  def login
+  end 
 end
