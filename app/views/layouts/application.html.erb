@@ -32,6 +32,11 @@
         <li>
           <%= link_to("ログイン", "/login") %>
         </li>
+        <% if session[:user.id]%>
+        <li>
+          <%= session[:user.id %>
+        </li>
+        <% end %>
       </ul>
     </header>
     <% if flash[:notice] %>
