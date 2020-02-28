@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user, {only: [:index, :show, :edit, :update]}
   def index
     @users = User.all
   end
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
     )
     if @user.save
       flash[:notice] = "新規登録が完了しました"
-      session[:user_id] = @user.id 
+      session[:user_id] = @user.id
       redirect_to("/users/index")
     else
       render("/users/new")
@@ -60,6 +61,6 @@ class UsersController < ApplicationController
   def logout
     session[:user_id] = nil
     flash[:notice] = "ログアウトしました"
-    redirect_to("/posts/index")
+    redirect_to("/")
   end
 end
