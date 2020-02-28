@@ -32,9 +32,9 @@
         <li>
           <%= link_to("ログイン", "/login") %>
         </li>
-        <% if session[:user.id]%>
+        <% if session[:user_id] %>
         <li>
-          <%= session[:user.id %>
+          <%= session[:user_id] %>
         </li>
         <% end %>
       </ul>
