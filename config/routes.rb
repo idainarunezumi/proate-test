@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "login" => "users#login_form" 
   get "users/:id/update" => "users#update"
   post "users/:id/update" => "users#update"
   get "users/:id/edit" =>"users#edit"
