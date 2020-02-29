@@ -10,10 +10,11 @@
       <% end %>
     </div>
     <% @user.posts.each do |post| %>
-    <div class="post-user-content">
+    <div class="users-posts-wrapper">
+     <div class="users-index-item">
       <%= post.content %>
-      <% end %>
-
+     </div>
     </div>
+    <% end %>
   </div>
 </div>
