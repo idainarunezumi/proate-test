@@ -4,7 +4,12 @@
     <div class="posts-wrapper">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to(post.content,"/posts/#{post.id}") %>
+        <div class="post-left">
+        <img src="<%= "/user_images/#{post.user.image_name}" %>" class="post-left-img">
+        </div>
+        <div class="post-right">
+          <%= link_to(post.content,"/posts/#{post.id}") %>
+        </div>
       </div>
     <% end %>
     </div>
