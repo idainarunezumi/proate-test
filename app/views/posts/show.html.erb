@@ -13,6 +13,7 @@
       <div class="posts-show-time">
         <%=@post.created_at  %>
       </div>
+      <% if @post.user.id == @current_user.id %>
       <div class="posts-menus">
         <ul>
           <li>
@@ -23,6 +24,7 @@
           </li>
         </ul>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
