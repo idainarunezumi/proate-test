@@ -9,5 +9,11 @@
       <%= link_to("編集する", "/users/#{@user.id}/edit") %>
       <% end %>
     </div>
+    <% @user.posts.each do |post| %>
+    <div class="post-user-content">
+      <%= post.content %>
+      <% end %>
+
+    </div>
   </div>
 </div>
