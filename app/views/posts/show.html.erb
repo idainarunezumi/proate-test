@@ -25,6 +25,11 @@
         </ul>
       </div>
       <% end %>
+      <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+      いいね済み
+      <% else %>
+      いいねしていません
+      <% end %>
     </div>
   </div>
 </div>
