@@ -1,8 +1,10 @@
 class User < ApplicationRecord
-  has_secure_password
   
+  has_secure_password
+
   validates :name, {presence: true}
   validates :email, {presence: true, uniqueness: true}
+
   def posts
     return post = Post.where(user_id: self.id)
   end
