@@ -28,9 +28,6 @@
         <li>
           <%= link_to("ログアウト", "/logout",{method: :post}) %>
         </li>
-        <li>
-          <%= "#{@current_user.name}さん" %>
-        </li>
         <% else %>
         <li>
           <%= link_to("Recommanderとは", "/about") %>
